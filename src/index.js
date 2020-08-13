@@ -5,7 +5,6 @@ const routes = require('./routes');
 
 const server = http.createServer((request, response) => {
   const parsedUrl = url.parse(request.url, true);
-
   console.log(`Request method: ${request.method} | Endpoint: ${parsedUrl.pathname}`);
 
   let { pathname } = parsedUrl;
